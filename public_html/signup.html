@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>signup</title>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/signup-grid.css">
+  <link rel="stylesheet" href="css/signup.css">
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body class="body page-signup clearfix" ng-app="spanish" ng-controller="registroController">
+  <div class="container _container container-1 clearfix">
+    <button onClick="window.location='index.html';" class="_button _button-1">Home</button>
+    <button onClick="window.location='informacion.html';" class="_button _button-2">Información</button>
+    <button onClick="window.location='cservices.html';" class="_button _button-3">C. Services</button>
+    <button onClick="window.location='signup.html';" class="_button _button-4">Sign up</button>
+    <button onClick="window.location='about.html';" class="_button _button-5">About us</button>
+    <button onClick="window.location='open.html';" class="_button _button-6">Open position</button>
+  </div>
+  <div class="header clearfix">
+    <img class="image image-1" src="images/bg_fiit.jpg">
+    <p class="title">Spanish Clinic, LLC</p>
+    <img class="image image-2" src="images/Instagram-48.png">
+    <img class="image image-3" src="images/Twitter-48.png">
+    <img class="image image-4" src="images/Facebook-48.png">
+  </div>
+  <div class="container _element"></div>
+  <div class="content1 clearfix">
+    <h1 class="text text-1">SIGN UP</h1>
+    <div class="container _container container-3 clearfix">
+      <p class="text _text text-2"><span>Name:</span></p>
+      <p class="text _text text-3"><span>Nombre:</span></p>
+      <input class="_input _input-1" ng-model="user.name" type="text">
+    </div>
+    <div class="container _container container-4 clearfix">
+      <p class="text _text text-4"><span>Last name:</span></p>
+      <p class="text _text text-5"><span>Apellido:</span></p>
+      <input class="_input _input-2" ng-model="user.lastName" type="text">
+    </div>
+    <div class="container _container container-5 clearfix">
+      <p class="text _text text-6"><span>Phone number:</span></p>
+      <p class="text _text text-7"><span>Número de teléfono:</span></p>
+      <input class="_input _input-3" ng-model="user.phone" type="text">
+    </div>
+    <div class="container _container container-6 clearfix">
+      <p class="text _text text-8"><span>Address:</span></p>
+      <p class="text _text text-9"><span>Dirección:</span></p>
+      <input class="_input _input-4" ng-model="user.address" type="text">
+    </div>
+    <button class="_button" ng-click="registrar(user)" ng-hide="user.name=='' || user.lastName=='' || user.phone=='' || user.address=='' || user.name==null || user.lastName==null || user.phone==null || user.address==null">Sign up</button>
+  </div>
+  <div class="footer clearfix">
+    <p class="text _text text-10">SPANISH CLINIC, LLC</p>
+    <img class="image image-5" src="images/Marker Filled-50.png">
+    <div class="container _container container-7 clearfix">
+      <p class="text _text text-11">Main office</p>
+      <p class="text _text text-12">4200 Morrison Rd 
+Unit 8</p>
+      <p class="text _text text-13">Denver, CO 80219</p>
+      <p class="text _text text-14">Ph: 303-934-3040</p>
+      <p class="text _text text-15">Fax: 303-934-4188</p>
+      <p class="text _text text-16">Color Line:
+303-937-3580</p>
+    </div>
+    <img class="image image-6" src="images/Message Filled-50.png">
+    <div class="container _container container-8 clearfix">
+      <p class="text _text text-17">Contact Us</p>
+      <p class="text _text text-18">Alfonso Castillo, BA, CAC III</p>
+      <p class="text _text text-19">acastillo@spanish-clinic.com</p>
+      <p class="text _text text-20">Director</p>
+      <p class="text _text text-21">Claudia Valadez MA, LPC LAC</p>
+      <p class="text _text text-22">cvaladez@spanish-clinic.com</p>
+      <p class="text _text text-23">Clinical Director</p>
+    </div>
+    <img class="image image-7" src="images/Marker Filled-50.png">
+    <img class="image image-8" src="images/Phone Filled-50.png">
+    <img class="image image-9" src="images/Message Filled-50.png">
+    <img class="image image-10" src="images/Phone Filled-50.png">
+    <div class="container _container container-9 clearfix">
+      <p class="text _text text-24">Peoria office</p>
+      <p class="text _text text-25">12445 E. 39th Ave.
+Unit 207</p>
+      <p class="text _text text-26">Denver, CO 80239</p>
+      <p class="text _text text-27">Ph: 720-335-6651<br></p>
+      <p class="text _text text-28">Fax: 303-934-4188</p>
+      <p class="text _text text-29">Color Line:
+303-937-3580</p>
+    </div>
+  </div>
+</body>
+</html>
